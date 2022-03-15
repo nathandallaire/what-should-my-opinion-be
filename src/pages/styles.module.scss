@@ -1,0 +1,104 @@
+:global(a) {
+  text-decoration: none;
+}
+
+.disabled {
+  pointer-events: none;
+
+  button {
+    opacity: 0.4;
+  }
+}
+
+.flag {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin: 0 0 20px 0;
+}
+
+.PageWrapper {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.button {
+  min-width: 200px;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+
+.stepTitle {
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.largeText {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+.inputTextGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputText {
+  margin-right: 10px;
+}
+
+.inputButton {
+}
+
+.loading {
+  width: 20px;
+}
+
+.finalOpinion {
+  padding: 20px;
+  border: 2px solid green;
+  border-radius: 20px;
+
+  &.opinion-Bad {
+    border-color: red;
+  }
+}
+
+.mobileOnly {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobileOnly {
+    display: block;
+  }
+}
+
+.share {
+  margin-top: 35px;
+
+  span {
+    margin-right: 10px;
+  }
+
+  a {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  svg {
+    width: 30px;
+  }
+}
