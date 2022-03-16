@@ -184,7 +184,7 @@ const Step4 = () => {
             {store.topic} <br className={CSS.mobileOnly} />=
             <br className={CSS.mobileOnly} /> {finalOpinion}
           </Title>
-          <Link to="/step-1">
+          <Link to="/">
             <Button
               variant="secondary"
               className={CSS.button}
