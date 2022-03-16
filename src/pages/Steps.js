@@ -143,7 +143,7 @@ const Step4 = () => {
   const { newsOpinion, affiliation, finalOpinion, setFinalOpinion, reset } =
     store;
   const [loading, setLoading] = useState(true);
-  const shareText = `Hey everyone, I found out my opinion is that ${store.topic} = ${finalOpinion}. Find out what your opinion should be!`;
+  const shareText = `Hey everyone, I found out my opinion is: ${store.topic} = ${finalOpinion}. Find out what your opinion should be!`;
   const tweetLink = `https://twitter.com/intent/tweet?url=${window.location.origin}&text=${shareText}`;
   const facebookLink = `https://www.facebook.com/sharer/sharer.php?u=${window.location.origin}&quote=${shareText}`;
 
