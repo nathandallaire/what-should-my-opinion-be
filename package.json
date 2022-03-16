@@ -21,7 +21,7 @@
   "scripts": {
     "add:redirects": "react-scripts build && echo '/* /index.html  200' | cat >build/_redirects ",
     "start": "react-scripts start",
-    "build": "react-scripts build && npm run add:redirects",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
